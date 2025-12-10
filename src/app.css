@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@plugin 'flowbite/plugin';
+@plugin "daisyui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+    --color-primary-50: #fff5f2;
+    --color-primary-100: #fff1ee;
+    --color-primary-200: #ffe4de;
+    --color-primary-300: #ffd5cc;
+    --color-primary-400: #ffbcad;
+    --color-primary-500: #fe795d;
+    --color-primary-600: #ef562f;
+    --color-primary-700: #eb4f27;
+    --color-primary-800: #cc4522;
+    --color-primary-900: #a5371b;
+
+    --color-secondary-50: #f0f9ff;
+    --color-secondary-100: #e0f2fe;
+    --color-secondary-200: #bae6fd;
+    --color-secondary-300: #7dd3fc;
+    --color-secondary-400: #38bdf8;
+    --color-secondary-500: #0ea5e9;
+    --color-secondary-600: #0284c7;
+    --color-secondary-700: #0369a1;
+    --color-secondary-800: #075985;
+    --color-secondary-900: #0c4a6e;
+}
+@source "../node_modules/flowbite-svelte/dist";
+@source "../node_modules/flowbite-svelte-icons/dist";
+
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(96% 0.001 286.375);
+    --color-base-200: oklch(98% 0.001 106.423);
+    --color-base-300: oklch(100% 0 0);
+    --color-base-content: oklch(20% 0 0);
+    --color-primary: oklch(83% 0.128 66.29);
+    --color-primary-content: oklch(26% 0.079 36.259);
+    --color-secondary: oklch(90% 0.182 98.111);
+    --color-secondary-content: oklch(28% 0.066 53.813);
+    --color-accent: oklch(82% 0.12 346.018);
+    --color-accent-content: oklch(28% 0.109 3.907);
+    --color-neutral: oklch(20% 0 0);
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: oklch(80% 0.105 251.813);
+    --color-info-content: oklch(28% 0.091 267.935);
+    --color-success: oklch(79% 0.209 151.711);
+    --color-success-content: oklch(26% 0.065 152.934);
+    --color-warning: oklch(85% 0.199 91.936);
+    --color-warning-content: oklch(28% 0.066 53.813);
+    --color-error: oklch(70% 0.191 22.216);
+    --color-error-content: oklch(25% 0.092 26.042);
+    --radius-selector: 0.5rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+    name: "dark";
+    default: false;
+    prefersdark: true;
+    color-scheme: "dark";
+    --color-base-100: oklch(20% 0.042 265.755);
+    --color-base-200: oklch(27% 0.041 260.031);
+    --color-base-300: oklch(12% 0.042 264.695);
+    --color-base-content: oklch(100% 0 0);
+    --color-primary: oklch(75% 0.183 55.934);
+    --color-primary-content: oklch(26% 0.079 36.259);
+    --color-secondary: oklch(79% 0.209 151.711);
+    --color-secondary-content: oklch(26% 0.065 152.934);
+    --color-accent: oklch(70% 0.01 56.259);
+    --color-accent-content: oklch(14% 0.004 49.25);
+    --color-neutral: oklch(44% 0.017 285.786);
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: oklch(78% 0.154 211.53);
+    --color-info-content: oklch(30% 0.056 229.695);
+    --color-success: oklch(77% 0.152 181.912);
+    --color-success-content: oklch(27% 0.046 192.524);
+    --color-warning: oklch(82% 0.189 84.429);
+    --color-warning-content: oklch(27% 0.077 45.635);
+    --color-error: oklch(80% 0.114 19.571);
+    --color-error-content: oklch(25% 0.092 26.042);
+    --radius-selector: 2rem;
+    --radius-field: 0.5rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
