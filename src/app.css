@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@layer utilities {
+    .no-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
 @plugin 'flowbite/plugin';
 @plugin "daisyui";
 
